@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+
+    background-color: #b4a7a7;
+    background-size:  100px 100px;
+    background-repeat: no-repeat;
+    font-size: 100%;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+    width: 0.6em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #C81E25;
+}
+
+.container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 190px;
+    padding-top: 60px;
+
+}
+
+.header img { 
+    width: 350px;
+    margin-top: 200px;
+    margin-bottom: 30px;  
+}
+
+.header nav a { 
+    gap: 80px;
+    font-size: 30px;
+    font-weight: 800pt;
+}
+
+.header-decora {
+    width: 630px;  
+    height: 4350px; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1000;
+    background-color: #C81E25;
+}
+
+.menu-item {
+    z-index: -500;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    display: inline-flex;
+    color: #000000;
+    margin: 0 50px;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+    border-bottom: 3px solid #5200FF;
+}
+
+
+
+.habilidades {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: 'Ubuntu', sans-serif;   
+    color: #000000;
+}
+
+.habilidades h2 {
+    font-size: 80px;
+    
+}
+
+.skills {
+    padding-left: 100px;
+    display: flex;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    align-items: left;
+    justify-content: right;
+    animation-name: skills;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes skills {
+    0%   {color:white; left:0px; top:0px;}
+    25%  {color:#C81E25; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:rgb(255, 255, 255); left:0px; top:200px;}
+    100% {color:rgb(0, 0, 0); }
+    0%   {width: 0px; }
+    25%  {width: 200px; }
+    50%  {width: 200px;}
+    75%  {width: 300px; }
+    100% {width: 450px;}
+  }
+
+
+.skill-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+
+.skill-panel h3 {
+    margin-top: 20px;
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.skill-panel p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.skill-panel span {
+    margin-left: 0px;
+}
+
+.bar1 {
+    width: 300px;
+    height: 5px;
+    position: relative;
+    background-color: white;
+    animation-name: bar1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bar1 {
+    0%   {width: 0px; }
+    50%  {width: 200px;}
+    100% {width: 300px;}
+  }
+
+
+
+.carousel-inner {
+    width: 600px;
+    padding: 50px;
+}
+
+.carousel-inner img {
+    display: inline-block;
+    flex-direction: row;
+    height: 580px;
+    width: auto;
+}
+
+.carousel-control-next {
+    height: 50px;
+    margin-top: 300px;
+    background-color: #000000;
+    border-radius: 40px;
+}
+
+.carousel-control-prev {
+    height: 50px;
+    margin-top: 300px;
+    background-color: #000000;
+    border-radius: 40px;
+}
+
+ .jobs-panel{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.jobs-panel{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.jobs-panel p {
+    color: #ffffff;
+}
+
+.titulo-habilidades {
+    display: flex;
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif; 
+}
+/*
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+.job-images {
+    width: 580px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+    cursor: grab;
+}
+
+.job-images::-webkit-scrollbar-track {
+    background: orange;        
+}
+
+.job-images img {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+ */
+/* .cartoes img {
+    height: 250px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+} */
+
+.contato-section {
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.contato-section {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-div1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.contato-div1 p {
+    font-size: 15px;
+    display: flex;
+    margin-top: 20px;
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    font-size: 20px;
+    text-align: center;
+    border-bottom:  5px #5200FF solid ;
+}
+
+.contato-div2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 300px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 9px;
+}
+
+input:focus {
+    background-color: #C81E25;
+}
+
+.telefone {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #5200FF;
+    color: blanchedalmond;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    border: 0;
+}
+
+.btn:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 50px 50px 50px;
+    background-color: blanchedalmond;
+    color: #5200FF;
+    font-weight: bold;
+    box-shadow: 0 0 1em #5200FF;
+}

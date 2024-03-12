@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    align-items: center;
+    background-color: #941317;
+    box-shadow: #000000;
+    box-shadow: 0px 0px 5px 3px rgba(238, 219, 219, 0.24);
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 190px;
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+
+.header img { 
+    width: 350px;
+    margin-top: 200px;
+    margin-bottom: 30px;  
+}
+
+.header nav a { 
+    gap: 80px;
+    font-size: 30px;
+    font-weight: 800pt;
+}
+
+.header-decora {
+    width: 630px;  
+    height: 4350px; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1000;
+    background-color: #C81E25;
+}
+
+.menu-item {
+    z-index: -500;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    display: inline-flex;
+    color: #000000;
+    margin: 0 50px;
+}
+
+.menu-item:hover {
+    color: #ffffff;
+    border-bottom: 3px solid #5200FF;
+}
+
+.mockup1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    margin-top: 325px;
+    padding-left: 420px;
+    z-index: -500px;
+    height: 450px;
+    transform: rotate(10deg)
+    
+}
+
+.card-image {
+    z-index: -500px;
+    display: flex;
+    position: relative;
+    height: 350px;
+    margin-left: -120px;
+    margin-top: 170px;
+    margin-bottom: 120px;
+    transform: rotate(10deg);
+}
+
+main p {
+    justify-content: flex-start;
+}
+
+.main-frase1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    margin-top: -150px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+}
+
+.main-frase2 {
+    z-index: -1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 130px;
+}
+.mockup2 {
+    z-index: -500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 700px;
+    margin-top: 100px;
+    margin-left: -130px;
+    transform: rotate(-10deg);
+    background-repeat: no-repeat;
+}
+
+.mockup2:hover {
+    background-image: url(mockup1.png) no-repeat;
+}
+
+.conteudo2-text {
+    width:450px;
+}
+
+.conteudo2-text h3 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 78px;    
+}
+
+.conteudo2-text h4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;    
+}
+
+.conteudo2-text p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;    
+}
+
+.link-client {
+        color: #4c4a50;
+        text-decoration: underline; 
+        margin-bottom: 20px;  
+}
+
+.link-client:hover {
+    color: blanchedalmond;    
+}
+
+.btn {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #5200FF;
+    color: blanchedalmond;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.btn:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px 50px 50px 50px;
+        background-color: blanchedalmond;
+        color: #5200FF;
+        font-weight: bold;
+        box-shadow: 0 0 1em #5200FF;
+}
+
+.conteudo3 {
+    display: flex;
+    flex-direction: column;
+}
+.conteudo3 h4 {
+    margin-top: -10px;
+}
+.conteudo3 p {
+    margin-top: 2px;
+}
+
+.graphic-panel {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphic-mockup {
+    z-index: -1000;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -150px;
+    width: 700px;
+    margin-left: 800px;
+}
+
+.card-image1 {
+    z-index: -500;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 700px;
+}
+.btn-graphic {
+    margin-left: 10px;
+    width: 300px;
+}
+
+.graphic-cta {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    color: blanchedalmond;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+
+}
+
+/* ELEMENTOS PARA LIVE */
+
+.live-panel {
+    display: flex;
+    margin-top: 50px;
+    padding: 80px;
+    background-color: #5200FF;
+    height: 390px;
+    flex-direction: column;
+}
+
+.live-panel h2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 48px;  
+}
+
+.twitch-logo {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px 20px;
+}
+
+.btn2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;  
+    color: #5200FF;
+    background-color: antiquewhite;
+    width: 250px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+}
+
+.btn-return {
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+.copy {
+    margin-top: 15px;
+    color: #ffffff;
+}

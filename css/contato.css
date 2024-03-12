@@ -1,0 +1,19 @@
+
+.header-decora {
+    position: absolute;
+    z-index: -5000;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    width: 600px;  
+    height: 860px;
+    background-color: #C81E25;
+    box-shadow: 1px 4px 114px -22px rgba(255,155,155,0.71);
+    -webkit-box-shadow: 1px 4px 114px -22px rgba(255,155,155,0.71);
+    -moz-box-shadow: 1px 4px 114px -22px rgba(255,155,155,0.71);
+}
+
+.btn {
+    display: flex;
+    margin: 0 auto;
+}
