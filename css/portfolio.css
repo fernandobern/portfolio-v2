@@ -184,10 +184,32 @@ body::-webkit-scrollbar {
   }
 
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #b4a7a7;
+    margin: 30px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 70%;
+}
+
+.project-info {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
 
 .carousel-inner {
     width: 600px;
     padding: 50px;
+}
+
+.carousel-item item-dev img{
+    width: max-content;
 }
 
 .carousel-inner img {
