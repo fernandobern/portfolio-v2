@@ -188,7 +188,6 @@ main p {
 
 .btn {
     display: flex;
-
     align-items: center;
     justify-content: center;
     width: 200px;
@@ -196,6 +195,7 @@ main p {
     border-radius: 50px 50px 50px 50px;
     background-color: #5200FF;
     color: blanchedalmond;
+    font-weight:bold;
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
@@ -207,7 +207,7 @@ main p {
         border-radius: 50px 50px 50px 50px;
         background-color: blanchedalmond;
         color: #5200FF;
-        font-weight: bold;
+        font-weight:bolder;
         box-shadow: 0 0 1em #5200FF;
 }
 

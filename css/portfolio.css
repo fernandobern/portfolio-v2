@@ -12,9 +12,8 @@ fieldset {
 }
 
 body {
+    background-color: #941317;
 
-    background-color: #b4a7a7;
-    background-size:  100px 100px;
     background-repeat: no-repeat;
     font-size: 100%;
     align-items: center;
@@ -71,7 +70,7 @@ body::-webkit-scrollbar {
 
 .header-decora {
     width: 630px;  
-    height: 4350px; 
+    height: 5950px; 
     position: absolute;
     bottom: 0;
     right: 0;
@@ -184,21 +183,28 @@ body::-webkit-scrollbar {
   }
 
 
+.title_m {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
-    background-color: #b4a7a7;
-    margin: 30px;
+    flex-wrap: wrap;
+    background-color: #55030375;
+    margin: 60px;
     justify-content: center;
     border-radius: 10px;
 }
 
 .project-card img {
-    width: 70%;
+    width: 100%;
 }
 
 .project-info {
-    display: flex;
+    color: #ffffff;
     margin-top: 10px;
     gap: 10px;
 }
@@ -333,14 +339,15 @@ form p {
     flex-direction: column;
 }
 
-input {
+.contato-div2 input {
     width: 300px;
     border-radius: 5px;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 9px;
+    margin-bottom: 9px;
 }
 
-input:focus {
+.contato-div2 input:focus {
     background-color: #C81E25;
 }
 
