@@ -1,3 +1,82 @@
+@media screen and (min-width: 412px) {
+  .header {
+    display: flex;
+    margin: 0 auto;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+  }
+
+  .header img { 
+      width: 300px;
+      margin-top: 200px;
+      margin-bottom: 30px;  
+  }
+
+  .header nav { 
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+
+  }
+
+  .menu-item {
+    z-index: 0;
+  }
+  
+  .menu {
+    width: 300px;
+  }
+
+  .menu a{
+    margin: 0 auto;
+  }
+  
+
+  .intro-text .main-frase2 {
+    padding-top: 10px;
+    font-size: 85px;
+  }
+
+  .main-frase1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    margin-top: -140px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 33px;
+  }
+
+  .card-image1 {
+    width: 100px;
+    height: auto;
+  }
+
+  .graphic-panel {
+    width: 300px;
+  }
+
+  .conteudo2 {
+
+    max-width: 350px;
+  }
+
+  .conteudo3 {
+    max-width: 350px;
+  }
+
+  .graphic-panel img {
+        min-width: 450px;
+    max-width: 400px;
+  }
+
+  .graphic-panel .conteudo2-text p {
+    font-size: 18px;    
+}
+}
+
 @media screen and (max-width: 768px ) {
     .container {
       width: auto;
@@ -20,6 +99,7 @@
     /* SEGUNDA SEÇÃO - ARTE DIGITAL */
     .conteudo2 {
       margin-top: 60px;
+ 
     }
     .conteudo2 p {
       width: 250px;
@@ -29,12 +109,13 @@
       font-size: 50px;
     }
     .conteudo2 h4 {
-      font-size: 25px;
+      max-width: 300px;
+      font-size: 21px;
     }
     .conteudo2 img {
       margin-top: 80px;
       margin-left: 10px;
-      width: 200px;
+      max-width: 200px;
       height: auto;
       transform: rotate(0deg);
     }
@@ -58,11 +139,11 @@
 
     /* SEGUNDA SEÇÃO - ARTE DIGITAL */
     .live-panel {
-    display: table-row;
+    display: flex;
     margin-top: 90px;
     padding: 80px;
     background-color: #5200FF;
-    height: 660px;
+    height: 400px;
 
     }
 
@@ -77,8 +158,8 @@
     text-align: center;
     display: flex;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 65px;  
-    margin-bottom: 20px;
+    font-size: 35px;  
+  
     }
 
     .btn2 {
@@ -100,9 +181,7 @@
   }
   
   .img-live-panel {
-    display: column;
-    background-color: #f0f0ef;
-    
+
     }
   
     .mockup1 { 
@@ -127,33 +206,7 @@
         justify-content: flex-start;
     } 
 
-    .conteudo2-text {
-      width:450px;
-  }
-  
-  .conteudo2-text h3 {
-      display: flex;
-      flex-direction: column;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 68px;    
-  }
-  
-  .conteudo2-text h4 {
-      display: flex;
-      flex-direction: column;
-      margin-top: 15px;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 28px;    
-  }
-  
-  .conteudo2-text p {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 20px;    
-  }
-  
+
   .link-client {
           color: #4c4a50;
           text-decoration: underline; 
