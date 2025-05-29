@@ -82,9 +82,9 @@
       width: auto;
     }
     .mockup1 { 
-      display: none;
+      
       background-image: url("mockup1-2.png");
-      height: 400px;
+      height: 340px;
       padding-top: 10px;
       margin-right: 3px;
       
@@ -99,7 +99,6 @@
     /* SEGUNDA SEÇÃO - ARTE DIGITAL */
     .conteudo2 {
       margin-top: 60px;
- 
     }
     .conteudo2 p {
       width: 250px;
@@ -176,14 +175,72 @@
 }
 
 @media screen and (max-width: 450px ) {
-  .container {
+
+  .conteudo2 {
+    margin-top: -45px;
+  }
+
+  div .mockup1 {
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    max-width: 350px;
+  }
+
+  .menu .menu-item {
+    font-size: 30px;
+    margin: 10px 10px;
+  }
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  .intro-text .main-frase1 {
     
+    font-size: 26px;
+  }
+  .intro-text .main-frase2 {
+    font-size: 70px;
+  }
+
+  .sections .conteudo2 {
+    margin-left: -40px;
+  }
+
+  .sections .conteudo2 img {
+    height: 300px;
+    margin-right: -1px;
+  }
+  .sections {
+    max-width: 35 0px;
+  }
+
+  div .mockup1 {
+    max-height: 300px;
+    width: auto;
   }
   
-  .img-live-panel {
+  .sections .graphic-panel {
+    max-width: 340px;
+  }
 
+  .sections .graphic-panel img{
+    max-width: 350px;
+  }
+
+  .live-panel {
+    display: flex;
+    max-width: 380px;
+    margin-top: 10px;
     }
-  
+
+  .live-panel h2 {
+    font-size: 30px;
+  }
     .mockup1 { 
       background-image: url("mockup1-2.png");
       margin-left: -180px;

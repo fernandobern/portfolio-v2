@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #ffffff;
 }
 
 fieldset {
@@ -209,6 +208,9 @@ body::-webkit-scrollbar {
 
 }
 
+.carousel-inner .carousel-item .btn {
+    margin-top: 85px;
+}
 .carousel-inner {
     width: 600px;
     padding: 50px;
@@ -348,4 +350,25 @@ button:hover {
     color: #5200FF;
     font-weight: bold;
     box-shadow: 0 0 2em #5200FF;
+}
+
+div .btn {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px 50px 50px 50px;
+        background-color: #5200FF;
+        color: #f0eff1;
+        font-weight:bolder;
+}
+
+div .btn:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px 50px 50px 50px;
+        background-color: blanchedalmond;
+        color: #5200FF;
+        font-weight:bolder;
+        box-shadow: 0 0 1em #5200FF;
 }

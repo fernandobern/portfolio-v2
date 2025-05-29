@@ -136,7 +136,7 @@ main p {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 700px;
+
     margin-top: 100px;
     margin-left: -130px;
     transform: rotate(-10deg);
@@ -152,8 +152,17 @@ main p {
     flex-direction: column;
 }
 
+.conteudo2 {
+    max-width: 500px;
+}
+
+.conteudo2 img {
+    max-height: 500px;
+    margin-right: 30px;
+}
+
 .conteudo2-text {
-    width:450px;
+    max-width:500px;
 }
 
 .conteudo2-text h3 {
@@ -299,13 +308,28 @@ main p {
     margin: 0px 20px;
 }
 
-.btn2 {
+
+.live-panel .btn {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;  
     color: #5200FF;
     background-color: antiquewhite;
     width: 250px;
+    height: 35px;
     margin-bottom: 50px;
+
+}
+
+.live-panel .btn:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 50px 50px 50px;
+    background-color: blanchedalmond;
+    color: #5200FF;
+    font-weight: bold;
+    height: 40px;
+    box-shadow: 0 0 2em #5200FF;
 
 }
 
