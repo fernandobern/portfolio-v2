@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 
 .header-decora {
     width: 630px;  
-    height: 6350px; 
+    height: 7850px; 
     position: absolute;
     bottom: 0;
     right: 0;
@@ -224,7 +224,7 @@ body::-webkit-scrollbar {
     display: inline-block;
     flex-direction: row;
     height: 580px;
-    width: auto;
+    max-width: 500px;
 }
 
 .carousel-control-next {
@@ -371,4 +371,7 @@ div .btn:hover {
         color: #5200FF;
         font-weight:bolder;
         box-shadow: 0 0 1em #5200FF;
+}
+.contato-section {
+    margin-top: 20px;
 }
