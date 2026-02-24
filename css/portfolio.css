@@ -380,3 +380,53 @@ div .btn:hover {
     display: flex;
     flex-direction: column;
 }
+
+/* Grid de PDFs */
+.pdf-grid {
+  margin-top: 40px;
+}
+
+.pdf-preview-card {
+  background: #912c2c;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.pdf-preview-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.pdf-preview-card canvas {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.pdf-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.pdf-preview-card .btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease;
+}
+
+.pdf-preview-card .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.pdf-preview-card .btn-primary:hover {
+  background-color: #0056b3;
+}
