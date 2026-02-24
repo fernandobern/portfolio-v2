@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
     <title>Portfólio - Fernando Designer e Dev</title> 
 </head>
 <body>
@@ -167,7 +168,73 @@
             </div>
             <br>
         </div>
+        <div class="container">
 
+          <!-- PDF.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+<div class="pdf-grid container">
+  <h3>Últimas Identidades Visuais e Documentos</h3>
+  <div class="row">
+    <!-- Card PDF 1 -->
+    <div class="col-md-4 pdf-preview-card">
+      <h5>Projeto 1</h5>
+      <canvas id="pdf-preview-1" style="border:1px solid #ccc; width:100%;"></canvas>
+      <a class="btn btn-primary mt-2" href="./docs/1.pdf" target="_blank">Abrir PDF Completo</a>
+    </div>
+
+    <!-- Card PDF 2 -->
+    <div class="col-md-4 pdf-preview-card">
+      <h5>Projeto 2</h5>
+      <canvas id="pdf-preview-2" style="border:1px solid #ccc; width:100%;"></canvas>
+      <a class="btn btn-primary mt-2" href="./docs/2.pdf" target="_blank">Abrir PDF Completo</a>
+    </div>
+
+    <!-- Card PDF 3 -->
+    <div class="col-md-4 pdf-preview-card">
+      <h5>Projeto 3</h5>
+      <canvas id="pdf-preview-3" style="border:1px solid #ccc; width:100%;"></canvas>
+      <a class="btn btn-primary mt-2" href="./docs/3.pdf" target="_blank">Abrir PDF Completo</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Configuração do worker do PDF.js
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+  // Função para renderizar a primeira página de um PDF
+  function renderPDFPreview(url, canvasId) {
+    const canvas = document.getElementById(canvasId);
+    const ctx = canvas.getContext('2d');
+
+    pdfjsLib.getDocument(url).promise.then(pdf => {
+      pdf.getPage(1).then(page => {
+        const scale = 1.2;
+        const viewport = page.getViewport({ scale });
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        const renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        page.render(renderContext);
+      });
+    }).catch(err => {
+      console.error("Erro ao carregar PDF:", err);
+    });
+  }
+
+  // Renderiza cada PDF
+  renderPDFPreview('./docs/1.pdf', 'pdf-preview-1');
+  renderPDFPreview('./docs/2.pdf', 'pdf-preview-2');
+  renderPDFPreview('./docs/3.pdf', 'pdf-preview-3');
+</script>
+
+        </div>
         
 
     <section class="contato-section">
@@ -197,7 +264,7 @@
 
 
     <footer>
-        <p>&copy;@fernandohtml</p>
+        <p>&copy;fernandohtml</p>
         <img src="" alt="" srcset="">
         <img src="" alt="">
     </footer>
@@ -206,5 +273,26 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+  const url = './docs/3.pdf'; // caminho do seu PDF
+
+  const canvas = document.getElementById('pdf-preview');
+  const ctx = canvas.getContext('2d');
+
+  pdfjsLib.getDocument(url).promise.then(pdf => {
+    pdf.getPage(1).then(page => {
+      const viewport = page.getViewport({ scale: 3 });
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport
+      };
+      page.render(renderContext);
+    });
+  });
+</script>
+
 </body>
 </html>
