@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 
 .header-decora {
     width: 630px;  
-    height: 7850px; 
+    height: 8950px; 
     position: absolute;
     bottom: 0;
     right: 0;
@@ -374,4 +374,9 @@ div .btn:hover {
 }
 .contato-section {
     margin-top: 20px;
+}
+
+.pdf-grid {
+    display: flex;
+    flex-direction: column;
 }
