@@ -381,15 +381,15 @@ div .btn:hover {
 
 .pdf-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 /* Grid de PDFs */
-.pdf-grid {
-  margin-top: 40px;
-}
 
 .pdf-preview-card {
+    max-width: 350px;
   background: #912c2c;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
