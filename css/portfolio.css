@@ -374,6 +374,7 @@ div .btn:hover {
         box-shadow: 0 0 1em #5200FF;
 }
 .contato-section {
+    padding: 20px;
     margin-top: 20px;
     background-color: #C81E25;
 }
@@ -409,7 +410,7 @@ div .btn:hover {
   border-radius: 8px;
   margin-bottom: 15px;
   max-width: 100%;
-  max-height: 400px;
+  max-height: auto;
 }
 
 .pdf-preview-card:hover {
@@ -431,4 +432,6 @@ div .btn:hover {
 
 .pdf-preview-card .btn-primary:hover {
   background-color: #0056b3;
+  transition: 2000ms all;
+  color: #000000;
 }
