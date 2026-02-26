@@ -212,7 +212,7 @@ body::-webkit-scrollbar {
     margin-top: 85px;
 }
 .carousel-inner {
-    width: 600px;
+    width: 700px;
     padding: 50px;
 }
 
@@ -223,8 +223,9 @@ body::-webkit-scrollbar {
 .carousel-inner img {
     display: inline-block;
     flex-direction: row;
-    height: 580px;
-    max-width: 500px;
+    height: 480px;
+    max-width: 450px;
+    border-radius: 20px;
 }
 
 .carousel-control-next {
@@ -408,7 +409,7 @@ div .btn:hover {
   border-radius: 8px;
   margin-bottom: 15px;
   max-width: 100%;
-  height: auto;
+  max-height: 400px;
 }
 
 .pdf-preview-card:hover {
